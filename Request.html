@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Request Virtual - MATCH Watch</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/android-chrome-192x192.png">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="request.css">
+</head>
+
+<body>
+    <main class="main" id="top">
+
+        <!-- Request Form Section -->
+        <section class="request-section">
+            <div class="container">
+                <div class="form-container">
+                    <h2>Schedule a Virtual Appointment</h2>
+                    <p class="subtitle">Book a one-on-one consultation with our watch experts</p>
+
+                    <form id="requestForm" class="appointment-form">
+                        <div class="form-step active" data-step="1">
+                            <h3>Personal Information</h3>
+                            <div class="form-group">
+                                <input type="text" id="firstName" required>
+                                <label for="firstName">First Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="lastName" required>
+                                <label for="lastName">Last Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" required>
+                                <label for="email">Email Address</label>
+                            </div>
+                            <h3>Appointment Details</h3>
+                            <div class="form-group">
+                                <input type="date" id="date" required>
+                            </div>
+                            <div class="form-group">
+                                <select id="timeSlot" required>
+                                    <option value="">Select Time</option>
+                                    <option value="09:00">9:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="14:00">2:00 PM</option>
+                                    <option value="15:00">3:00 PM</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="notes" rows="3"></textarea>
+                                <label for="notes">Additional Notes</label>
+                            </div>
+                            <div class="button-group">
+                                <button type="submit" class="submit-btn">Submit Request</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="request.js"></script>
+</body>
+
+</html>

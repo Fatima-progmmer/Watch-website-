@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shipping Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: black;
+            color: white;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+        ul h2{
+            font-size: 20px;
+        }
+        h3{
+            padding-top: 30px;
+            font-size: 23px;
+        }
+        .shipping-info {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .shipping-info h2 {
+            margin-top: 0;
+        }
+
+        .shipping-info ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .shipping-info li {
+            margin-bottom: 10px;
+        }
+
+        .shipping-info p {
+            margin-bottom: 20px;
+        }
+        ul,.whole{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            
+        }
+        .whole{
+            margin-left: 100px;
+        }
+        .hole{
+            margin-left: 120px;
+        }
+        .whole div{
+            background-color: rgb(27, 27, 27);
+            width: 200px;
+            height: 100px;
+            margin-right: 10px;
+            font-size: 17px;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+            place-items: center;
+            padding: 10px;
+        }
+        ul li{
+            background-color: rgb(27, 27, 27);
+            width: 200px;
+            height: 200px;
+            margin-right: 10px;
+            font-size: 15px;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+            place-items: center;
+        }
+        ul li div{
+            align-items: center;
+            padding: 20px;
+        }
+            
+        br{
+            margin-bottom: 10px;
+        }
+        ul li:hover,.whole div:hover{
+            background-color: rgb(126, 47, 13);
+            scale: 1.2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shipping-info">
+        <h1>Shipping Information</h1>
+        <h3>Shipping Rates</h3>
+        <p>We offer the following shipping rates:</p>
+        <div class="hole">
+            <ul>
+                <li>
+                    <div class="Standard1">
+                        <h2>Standard Shipping</h2><br>(3-7 business days) <br> $5.99
+                    </div>
+                </li>
+                <li>
+                    <div class="Standard2">
+                        <h2>Express Shipping</h2><br>(2-3 business days) <br> $9.99
+                    </div>
+                </li>
+                <li>
+                    <div class="Standard3">
+                        <h2>Overnight Shipping</h2> <br>(1 business day): <br> $19.99
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <h3>Shipping Times</h3>
+        <div class="whole">
+            <p>
+            <div>We ship Monday through Friday, excluding holidays.</div>
+            </p>
+            <p>
+            <div>Orders placed before 2 PM EST will be shipped the same day.</div>
+            </p>
+            <p>
+            <div>Orders placed after 2 PM EST will be shipped the next business day.</div>
+            </p>
+        </div>
+        <h3>Tracking Information</h3>
+        <p>You will receive an email with tracking information once your order has shipped.</p>
+        <h3>International Shipping</h3>
+        <p>We ship to most countries worldwide.</p>
+        <p>International shipping rates and delivery times vary depending on the destination.</p>
+    </div>
+</body>
+
+</html>
